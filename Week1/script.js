@@ -2870,24 +2870,27 @@ function details(json){
            json[i].name ==="Git" || json[i].name ==="CommandLine" || 
            json[i].name ==="React"){
             
-            let divDetails = document.createElement("div");    // Create a <div> element
-            divAll.appendChild(divDetails);
+                let divDetails = document.createElement("div");    // Create a <div> element
+                divAll.appendChild(divDetails);
             
-            let itemName = document.createElement("h2");    // Create a <p> element
-            itemName.innerHTML = json[i].name; 
-            divDetails.appendChild(itemName);
+                let itemName = document.createElement("h2");    // Create a <p> element
+                itemName.innerHTML = json[i].name; 
+                divDetails.appendChild(itemName);
             
-            let itemStar = document.createElement("p");    // Create a <p> element
-            itemStar.innerHTML = "Stargazers number : " + json[i].stargazers_count; divDetails.appendChild(itemStar);
+                let itemStar = document.createElement("p");    // Create a <p> element
+                itemStar.innerHTML = "Stargazers number : " + json[i].stargazers_count; 
+                divDetails.appendChild(itemStar);
             
-            let itemWatchers = document.createElement("p");    // Create a <p> element
-            itemWatchers.innerHTML = "Watchers number : " + json[i].watchers;               divDetails.appendChild(itemWatchers);
+                let itemWatchers = document.createElement("p");    // Create a <p> element
+                itemWatchers.innerHTML = "Watchers number : " + json[i].watchers;               
+                divDetails.appendChild(itemWatchers);
             
-            let itemFork = document.createElement("p");    // Create a <p> element
-            itemFork.innerHTML = "Forks number : " + json[i].forks;               divDetails.appendChild(itemFork);
+                let itemFork = document.createElement("p");    // Create a <p> element
+                itemFork.innerHTML = "Forks number : " + json[i].forks;               
+                divDetails.appendChild(itemFork);
             
-            let itemRep = document.createElement("p");    // Create a <p> element
-            itemRep.innerHTML = "Language of Repository : " + json[i].language;         divDetails.appendChild(itemRep);
+                let itemRep = document.createElement("p");    // Create a <p> element
+                itemRep.innerHTML = "Language of Repository : " + json[i].language;         divDetails.appendChild(itemRep);
                                
             }
         }
