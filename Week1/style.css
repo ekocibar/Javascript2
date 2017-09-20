@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    max-width: 900px;
+    margin: auto;
+    background: rgb(163, 41, 122);
+    
+    
+}
+
+
+#list{
+    width : 47%;
+    float: left;
+    margin-top: 3%;
+    list-style: decimal;
+    text-transform: uppercase;
+    
+}
+#list li:hover {
+  background-color:rgb(242, 242, 242);
+}
+
+
+
+#details{
+    width : 47%;
+    float:left;
+    
+    
+}
+
+#details p{
+    margin: 0;
+}
+
+#details h2{
+    margin: 1%;
+}
+
+#details div{
+    margin-bottom: 6%;
+    
+}
+
+#details div:hover {
+  box-shadow: 1 10px 20px rgba(0,0,0,0.30), 0 10px 10px rgba(0,0,0,0.22);
+  background-color:rgb(242, 242, 242);
+}
+
+
+
+
+
