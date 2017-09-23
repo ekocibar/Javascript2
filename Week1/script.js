@@ -2834,7 +2834,7 @@ console.log( json[2].full_name);       //Print the full name of the 3rd reposito
 
 function repNames(json) {                         // function takes an array as an arg.
     let ulList = document.createElement("ul");    // Create an <ul> element
-    ulList.setAttribute("id", "list");
+    ulList.setAttribute("id", "list");            // set the id
     document.body.appendChild(ulList);            // Append LIST to <body>
  
     for(let i = 0; i < json.length; i++){
@@ -2845,7 +2845,7 @@ function repNames(json) {                         // function takes an array as 
            json[i].name ==="React"){
             let ilItem = document.createElement("li");    // Create an <li> element
             ilItem.innerHTML = json[i].name;              // Set the <li> item     
-            ulList.appendChild(ilItem);                   // Append the item to <li>
+            ulList.appendChild(ilItem);                   // Append the item to <ul>
             }
         }
 }
@@ -2858,9 +2858,9 @@ repNames(json);
 
 
 function details(json){
-    let divAll = document.createElement("div");    // Create a <div> element
+    let divAll = document.createElement("div");     // Create a <div> element
     divAll.setAttribute("id", "details");           // Set the id
-    document.body.appendChild(divAll);
+    document.body.appendChild(divAll);              // append the 'div' to the body    
     
     for(let i = 0; i < json.length; i++){
         
@@ -2873,7 +2873,7 @@ function details(json){
                 let divDetails = document.createElement("div");    // Create a <div> element
                 divAll.appendChild(divDetails);
             
-                let itemName = document.createElement("h2");    // Create a <p> element
+                let itemName = document.createElement("h2");    // Create a <h2> element
                 itemName.innerHTML = json[i].name; 
                 divDetails.appendChild(itemName);
             
@@ -2890,7 +2890,8 @@ function details(json){
                 divDetails.appendChild(itemFork);
             
                 let itemRep = document.createElement("p");    // Create a <p> element
-                itemRep.innerHTML = "Language of Repository : " + json[i].language;         divDetails.appendChild(itemRep);
+                itemRep.innerHTML = "Language of Repository : " + json[i].language;         
+                divDetails.appendChild(itemRep);
                                
             }
         }
@@ -2903,12 +2904,12 @@ details(json)
         //####  6  ####
 /*place the avatar_url (logo) of our organization somewhere on a nice place in your page.*/
 
-let place = document.getElementById("list");
-let logo = document.createElement("img");
+let place = document.getElementById("list");                    // find the list from html
+let logo = document.createElement("img");                       //  create an <img> 
 logo.setAttribute("src", json[0].owner.avatar_url);
-logo.setAttribute("alt", "Such a good logo");
+logo.setAttribute("alt", "Such a good logo");                   // set attributes of <img>
 logo.setAttribute("width", "100px");
-place.appendChild(logo);
+place.appendChild(logo);                                        // append the image(logo) to the list(place)
 
 
 
