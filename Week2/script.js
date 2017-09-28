@@ -20,8 +20,8 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
    // start at beginning of array and check if you should call threeCallback or 
    // fiveCallback or go on to next 
     for(let j = 0; j < arrayContainer.length; j++){
-        arrayContainer[j]%3 == 0 ? threeCallback(): true;
-        arrayContainer[j]%5 == 0 ? fiveCallback(): true;  
+        if (arrayContainer[j]%3 == 0 ) threeCallback();
+        if (arrayContainer[j]%5 == 0 ) fiveCallback();  
     }
 }
 function sayThree(){console.log("3 CALLED!")}
@@ -79,7 +79,7 @@ function repeatStringNumTimes(str, num) {
  let newStr = "";
  let i = 0;
  do{  
-   num > 0 ? newStr += str : false;
+   if ( num > 0 ) newStr += str ;
    i++;
  } 
  while(i<num)
