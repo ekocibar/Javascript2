@@ -74,9 +74,9 @@ function calLAPI2(inputValue){
             
             } else if((request.readyState!==4) && (request.status!==200)) {
                 
-                alert("SORRY, THERE IS NO SUCH REPISOTORY")
+                alert("SORRY, THERE IS NO SUCH REPOSITORY")
                 let err = document.getElementById("rightSide");
-                err.innerHTML ="SORRY, THERE IS NO SUCH REPISOTORY";
+                err.innerHTML ="SORRY, THERE IS NO SUCH REPOSITORY";
             }
     }
     request.send();  
